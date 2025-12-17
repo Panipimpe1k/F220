@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+<div id="content">
+<%- include('../partials/navi') %>
+<main id="pokaz">
+    <h1><%= candle.name %></h1>
+    <p><%= candle.price %> zł - <%= candle.burningTime %> h</p>
+    <p><%= candle.description %></p>
+    <b>Status: </b><%= candle.state %><br>
+    
+    <a href="/edit/<%=candle._id %>">Edytuj</a>
+    <form action="/delete/<%= candle._id %>" method="POST">
+        <button type="submit">Usuń</button> 
+    </form>  
+</main>
+</div>
+<%- include('../partials/footer') %>

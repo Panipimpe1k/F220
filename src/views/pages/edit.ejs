@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+<div id="content">
+<%- include('../partials/navi') %>
+<main>
+    <h2>Zmieniaj to co tylko chcesz</h2>
+    <form action="/edit/<%= candle._id %>" method="POST">
+        <input type="text" name="name" value="<%= candle.name %>" placeholder="Nazwa produktu" required><br>
+        <input type="number" name="price" value="<%= candle.price %>" placeholder="Cena" required><br>
+        <input type="number" name="burningTime" value="<%= candle.burningTime %>" placeholder="Czas palenia w godz." required><br>
+        <textarea name="description"><%= candle.description %></textarea><br>
+        <select name="state" id="state">
+            <option value="available" <%= candle.state === 'available' ? 'selected' : '' %>>Dostępna</option>
+            <option value="out of order" <%= candle.state === 'out of order' ? 'selected' : '' %>>Nie dostępna</option>
+        </select>
+        <button type="submit">Zapisz</button>
+    </form>
+</main>
+</div>
+<%- include('../partials/footer') %>

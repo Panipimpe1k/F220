@@ -1,0 +1,21 @@
+Docker- uruchomienie MongoDB
+
+Wymagania:
+Zainstalowany Docker
+
+Uruchomienie kontenera MongoDB:
+docker run -d --name mongo_library -p 27017:27017 mongo:6.0
+
+Opis:
+- Kontener MongoDB działa na porcie 27017
+- Połączenie odbywa się z bazą danych poprzez: mongodb://localhost:27017
+
+Test:
+- MongoDB uruchomione w kontenerze Docker
+- Aplikacja Node.js łaczy się z baza danych poprzez MongoDB_URI
+
+Zatrzymanie:
+docker stop mongo_library
+
+Ponowne uruchomienie:
+docker start mongo_library

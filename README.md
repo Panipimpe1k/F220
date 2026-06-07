@@ -17,41 +17,41 @@ Aplikacja webowa do zarządzania listą świec zapachowych, stworzona w Node.js 
 
 Struktura Projektu
 / public/
-  |---css/
-  |    |--- style.css
-  |---img/
-       |--- produkt.png
-       |--- Logo.png
-
-src/
-|-controllers/
-| |--- candlesControllers.js
-|
-|-data/
-| |--- connection.js
-|
-|-models/
-| |--- candlesModels.js
-|
-|-routes/
-| |--- candlesRouter.js
-|
-|-views/
-  |--- pages/
-  |    |--- add.ejs
-  |    |--- edit.ejs
-  |    |--- index.ejs
-  |    |--- view.ejs
-  |    |--- error.ejs
-  |
-  |--- partials/
-       |--- footer.ejs
-       |--- header.ejs
-       |--- navi.ejs
-
---- app.js
---- server.js
-
+/  |---css/
+/  |    |--- style.css
+/  |---img/
+/       |--- produkt.png
+/       |--- Logo.png
+/
+/src/
+/|-controllers/
+/| |--- candlesControllers.js
+/|
+/|-data/
+/| |--- connection.js
+/|
+/|-models/
+/| |--- candlesModels.js
+/|
+/|-routes/
+/| |--- candlesRouter.js
+/|
+/|-views/
+/  |--- pages/
+/  |    |--- add.ejs
+/  |    |--- edit.ejs
+/  |    |--- index.ejs
+/  |    |--- view.ejs
+/  |    |--- error.ejs
+/  |
+/  |--- partials/
+/       |--- footer.ejs
+/       |--- header.ejs
+/       |--- navi.ejs
+/
+/--- app.js
+/--- server.js
+/
 ## Instalacja i uruchomienie
 
 ### Wymagania:

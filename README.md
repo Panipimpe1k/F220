@@ -16,7 +16,7 @@ Aplikacja webowa do zarządzania listą świec zapachowych, stworzona w Node.js 
 - Renderowanie widoków z EJS
 
 Struktura Projektu
-/ public/
+/ public/ /
 /  |---css/
 /  |    |--- style.css
 /  |---img/

@@ -2,7 +2,7 @@ Opis Projektu
 Aplikacja webowa do zarządzania listą świec zapachowych, stworzona w Node.js i Express.
 
 ## Technologie
-- Node.js v18+
+- Node.//js v18+
 - Express
 - MongoDB
 - EJS

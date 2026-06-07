@@ -1,8 +1,0 @@
-const app = require('./app.js');
-const { connectDB } = require('./data/connection');
-
-const PORT = 3098;
-
-connectDB().then(() => {
-    app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
-}); 

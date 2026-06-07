@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+<div id="content">
+<%- include('../partials/navi') %>
+<main>
+    <h2>Stwórz swoja wymarzoną świecę</h2>
+    <form action="/add" method="POST">
+        <input type="text" name="name" placeholder="Nazwa produktu" required><br>
+        <input type="number" name="price" placeholder="Cena" required><br>
+        <input type="number" name="burningTime" placeholder="Czas palenia w godz." required><br>
+        <textarea name="description" placeholder="opis" required></textarea><br>
+        <select name="state" id="state" required>
+            <option
+            value="available">Dostępna</option>
+            <option
+            value="out of order">Nie dostępna</option>
+        </select>
+        <button type="submit">Zapisz</button>
+    </form>
+</main>
+</div>
+<%- include('../partials/footer') %>

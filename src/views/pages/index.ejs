@@ -1,0 +1,24 @@
+<%- include('../partials/header') %>
+<div id="content">
+<%- include('../partials/navi') %>
+<div id="mainbox">
+    <ul>
+        <% candles.forEach(candle => { %>
+            <li>
+                <h1><a href="/view/<%=candle._id %>"><%= candle.name %></a></h1>
+                <img src="/img/produkt.png"></br>
+                <%= candle.price %> zł - <%= candle.burningTime %> h - <%= candle.state %></br>
+                 
+
+                <a id="edit" href="/edit/<%=candle._id %>">Edytuj</a>
+
+                <form action="/delete/<%= candle._id %>" method="POST" style="display: inline;">
+                    <button type="submit">Usuń</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+</main>
+</div>
+</div>
+<%- include('../partials/footer') %>

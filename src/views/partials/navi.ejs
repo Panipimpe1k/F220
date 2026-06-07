@@ -1,0 +1,17 @@
+<nav>
+    <a href="/"> Strona główna </a> </br>
+    <hr>
+    <a href="/add"> Utwórz unikatową świeczke </a>
+    <hr>
+    <p>Lista świec</p>
+    <% if (typeof candles !== 'undefined') { %>
+    <% candles.forEach(candlenav => { %>
+        <h1>
+            <a href="/view/<%= candlenav._id %>">
+                <%= candlenav.name %>
+            </a>
+        </h1>
+        <hr>
+    <% }) %>
+<% } %>
+</nav>
